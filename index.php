@@ -1,6 +1,7 @@
 <?php session_start(); ?>
 <?php require 'handle.php'; ?>
 <?php
+// setcookie('username', 'test', ['httponly' => true, 'secure' => true]);
 setcookie('username', 'test');
 ?>
 <!DOCTYPE html>
@@ -51,7 +52,7 @@ setcookie('username', 'test');
         echo '<a href="logout.php" class="btn" >Logout</a> <br \>';
     } else {
         echo '<h1 align="center">You are not login!</h1>';
-        echo '<a href="login.php" class="btn">Login</a>';
+        // echo '<a href="login.php" class="btn">Login</a>';
     }
     ?>
 
@@ -85,6 +86,9 @@ setcookie('username', 'test');
             $i++;
         }
         ?>
+        <a href="https://php-bacsic.000webhostapp.com/fakeLogin.php" class="btn btn-primary">Login</a>
+
+
     </div>
 
 </body>

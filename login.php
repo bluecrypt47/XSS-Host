@@ -131,7 +131,7 @@
     <div class="form">
       <h2>Login</h2>
       <form class="login-form" method="post" action="login.php">
-        <input type="text" name="email" placeholder="username" />
+        <input type="email" name="email" placeholder="email" />
         <input type="password" name="password" placeholder="password" />
         <input type="submit" name="login" value="Login" style="background: #4CAF50;" />
         <p class="message">Not registered? <a href="register.php">Create an account</a></p>
